@@ -1,0 +1,15 @@
+{
+  "name": "ilovereact",
+  "version": "1.0.0",
+  "description": "for study react",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "js",
+    "react"
+  ],
+  "author": "elevensky",
+  "license": "MIT"
+}
