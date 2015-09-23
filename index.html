@@ -6,15 +6,59 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>传学教育</title>
+    <title>React Flex test example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
-<body  data-spy="scroll" data-target="#topnav" id="top">
-<div>hello world!日狗大法好</div>
+<body>
+<div class="section section1 flex-box flex-column flex-justify-content-center flex-align-items-center">
+    <img class="item" class="react-logo" src="img/react-logo.svg"/>
+    <h1 class="item title">Build Native Apps With React</h1>
+    <div class="navbar flex-box flex-row">
+        <a href="#native">
+          Native iOS
+        </a>
+        <a href="#touch">
+          Touch Handling
+        </a>
+        <a href="#async">
+          Asynchronous
+        </a>
+        <a href="#flex">
+          Flex &amp; Styling
+        </a>
+    </div>
+</div>
+<div class="section section2 flex-box flex-row flex-align-items-center flex-justify-content-center">
+    <div class="iphone-demo">
+      <img src="img/iphone-frame.svg"/>
+    </div>
+
+    <div class="feature-description flex-box flex-column">
+      <h2>Native Experience</h2>
+      <p>
+        Takes advantage of native iOS components to give your app
+        a consistent look and feel with the rest of the platform ecosystem,
+        and keeps the quality bar high.
+      </p>
+    </div>
+</div>
+<div class="section section3 flex-box flex-row">
+    <div class="iphone-demo">
+      <img src="img/iphone-frame.svg"/>
+    </div>
+    <div class="feature-description flex-box flex-column">
+      <h2>Touches &amp; Gestures</h2>
+      <p>
+        React Native implements a powerful responder system to
+        negotiate touches in complex view hierarchies. It allows you
+        to build complex UI, and handle user interactions precisely.
+      </p>
+    </div>
+</div>
+<div class="section section4 flex-box flex-column flex-justify-content-center flex-align-items-center">
+    <h1 class="title">Android Is Supported!</h1>
+</div>
 </body>
 </html>
