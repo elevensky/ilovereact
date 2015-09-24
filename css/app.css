@@ -1,5 +1,5 @@
 @import "normalize.css";
-*{padding:0; margin:0;}
+*{padding:0; margin:0;position: relative;}
 body {
   background-color: #1F1E34;
   color: #FFF;
@@ -73,8 +73,22 @@ a:hover {
   width: 100vw;
 }
 .section1 {
+  position: relative;
+  background: url(../img/background.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: center;
   flex-grow:1;
+  background-color: #1F1E34;
 }
+.mask{
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,30,52,0)), color-stop(100%,rgba(31,30,52,1)));
+}
+
 .title{
   text-align: center;
   font-size:64px;
@@ -91,20 +105,23 @@ a:hover {
   padding:20px 10px;
 }
 
-.section2, .section3, .section4{
-  background-color: #351B2D;
-}
-
 .iphone-demo {
+  position: relative;
   flex-grow:1;
   display:flex;
   align-self:stretch;
   justify-content: center;
-  background-color: rgba(255,0,0,0.3);
   flex-basis: 0;
 }
 .iphone-demo img {
   align-self:center;
+}
+.tumblr-demo{
+  background-color: #fff;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
 }
 .feature-description {
   flex-grow:1;
@@ -112,9 +129,40 @@ a:hover {
   align-item:flex-start;
   justify-content: center;
   flex-basis: 0;
-  background-color: rgba(0,255,0,0.3);
 }
 .react-logo{
   width:300px;
   height:632px;
+}
+.section4{
+  position: relative;
+  overflow:hidden;
+}
+#android-robot {
+  position: absolute;
+  bottom:0;
+  right:0;
+  transform: rotate(-45deg) scale(0.5) translate(-14%, 120%);
+}
+#slider-control {
+  position: fixed;
+  right:10px;
+  top:50%;
+  transform:translate(0, -50%);
+  padding: 3px;
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#slider-control .active .dot {
+  background-color: #fff;
 }
