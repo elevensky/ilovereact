@@ -142,7 +142,7 @@ a:hover {
   position: absolute;
   bottom:0;
   right:0;
-  transform: rotate(-45deg) scale(0.5) translate(-14%, 120%);
+  transform: rotate(-45deg) scale(0.5) translate(-15%, 120%);
 }
 #slider-control {
   position: fixed;
